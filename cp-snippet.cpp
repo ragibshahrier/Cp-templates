@@ -12,11 +12,17 @@ typedef long long ll;
 #define vvi vector<vi>
 #define vl vector<ll>
 #define vvl vector<vl>
+#define vpi vector<pair<int,int>>
+
 #define pi pair<int,int>
 #define pll pair<ll,ll>
+
+#define pb push_back
+#define pf push_front
+
 #define ff first
 #define ss second
-#define vpi vector<pair<int,int>>
+#define FOR(ii,st, n) for(int ii=st; ii<n; ii++)
 #define rep(ii,st, n) for(int ii=st; ii<n; ii++)
 #define gp " "
 
@@ -56,7 +62,7 @@ void preprocessing(){
 
 }
 
-void solve(){
+void solve(int testcase){
     
 
 }
@@ -67,6 +73,6 @@ int main(){
     int t=1;
     cin>>t;
     preprocessing();
-    while(t--)solve();
+    rep(i,0,t)solve(t);
     return 0;
 }
