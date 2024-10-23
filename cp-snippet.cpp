@@ -73,6 +73,6 @@ int main(){
     int t=1;
     cin>>t;
     preprocessing();
-    rep(i,0,t)solve(t);
+    rep(i,1,t+1)solve(t);
     return 0;
 }
