@@ -5,6 +5,7 @@ using namespace std;
 // #define ordered_set tree<int, null_type,less<int>, rb_tree_tag,tree_order_statistics_node_update> 
 // using namespace __gnu_pbds; 
 
+#define int long long
 typedef long long ll;
  
 #define vi vector<int>
@@ -67,7 +68,7 @@ void solve(int testcase){
 
 }
 
-int main(){
+int32_t main(){
     fastcin();
 
     int t=1;
