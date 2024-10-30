@@ -23,4 +23,6 @@ struct BIT { //1-indexed
   }
 };
 
+
 //initialize BIT<datatype>name(size);
+
