@@ -1,3 +1,7 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
 void phi_1_to_n(int n) {
     vector<int> phi(n + 1);
     for (int i = 0; i <= n; i++)

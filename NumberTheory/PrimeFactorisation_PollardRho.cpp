@@ -44,12 +44,12 @@ namespace Rho {
         ULL c = 1, x = 0, y = 0, t = 0, prod = 2, x0 = 1, q;
         auto f = [&](ULL X) { return mult(X, X, n) + c;};
 
-        while (t++ % 128 or gcd(prod, n) == 1) {
+        while (t++ % 128 or __gcd(prod, n) == 1) {
             if (x == y) c = rng()%(n-1)+1, x = x0, y = f(x);
             if ((q = mult(prod, max(x, y) - min(x, y), n))) prod = q;
             x = f(x), y = f(f(y));
         }
-        return gcd(prod, n);
+        return __gcd(prod, n);
     }
 
     ///Returns all prime factors
