@@ -28,7 +28,7 @@ typedef long long ll;
 #define pow2(i) (1LL<<i)
 #define bitcnt(x) ((sizeof(x) <= sizeof(int)) ? (32 - __builtin_clz(x)) : (64 - __builtin_clzll(x)))
 
-#define DEBG
+// #define DEBG
 
 #define debug(n)
 #define debugc(a)
@@ -71,6 +71,7 @@ void solve(int testcases){
 
 int32_t main(){
     fastcin();
+    
 
     int t=1;
     cin>>t;
