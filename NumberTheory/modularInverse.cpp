@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 long long modInverse(long long A, long long m)
 {
     long long m0 = m;
@@ -22,4 +25,21 @@ long long modInverse(long long A, long long m)
         x += m0;
 
     return x;
+}
+
+
+long long modDivision(long long a, long long b, long long m){
+    long long g = __gcd(b,m);
+
+    if(a%g!=0){
+        return -1;
+    }
+
+    b = b/g;
+    a = a/g;
+    m = m/g;
+
+    long long inv = modInverse(b, m);
+
+    return ( (a % m) * (inv % m) ) % m;
 }
