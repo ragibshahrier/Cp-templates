@@ -26,7 +26,7 @@ typedef long long ll;
 #define setbit(x,n) (x=(x|(1LL<<n)))
 #define resetbit(x,n) (x=(x&(~(1LL<<n))))
 #define pow2(i) (1LL<<i)
-#define bitcnt(x) ((sizeof(x) <= sizeof(int)) ? (32 - __builtin_clz(x)) : (64 - __builtin_clzll(x)))
+#define bitcnt(x) ((sizeof(x) <= sizeof(int32_t)) ? (32 - __builtin_clz(x)) : (64 - __builtin_clzll(x)))
 
 #define DEBG
 
