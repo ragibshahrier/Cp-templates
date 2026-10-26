@@ -1,3 +1,8 @@
+// #pragma GCC optimize("O3,unroll-loops")
+// #include <bits/allocator.h>
+// #pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+// #pragma GCC optimize("Ofast,unroll-loops")
+ 
 #include<bits/stdc++.h>
 // #include <ext/pb_ds/assoc_container.hpp>
 // #include <ext/pb_ds/tree_policy.hpp> 
