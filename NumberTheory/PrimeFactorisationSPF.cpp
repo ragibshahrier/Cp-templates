@@ -35,7 +35,7 @@ void sieve(){
 //prime factorisation in O(log(n)) by precalculating SPF
 //works when n<=1e7
 
-void prime_factorisation(int x){
+map<int,int> prime_factorisation(int x){
     map<int,int>divs;
     while(x>1){
         int y = spf[x];
@@ -44,7 +44,7 @@ void prime_factorisation(int x){
             divs[y]++;
         }
     }
-    for(auto e:divs)cout << e.first << " " << e.second << endl;
+    return divs;
 }
 
 
